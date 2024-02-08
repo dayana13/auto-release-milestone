@@ -1,0 +1,14 @@
+name: 'Demo Auto Release Milestone'
+description: 'Drafts a GitHub release based on a newly closed milestone.'
+author: 'Dayana Myk'
+
+outputs:
+  release-url:
+    description: 'The URL of the GitHub release that was drafted'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+
+branding:
+  color: red
+  icon: flag
